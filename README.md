@@ -1,19 +1,20 @@
-# Blockchain Development Tutorial for Developers
+# Contract Details
+## Greeter.sol
+The contract is defined with the name "Greeter" and specifies that it complies with the MIT license.
+The contract contains a private string variable called "greeting," which will store the greeting message added by users. The "private" visibility modifier restricts direct access to this variable from outside the contract.
+The setGreeter function allows users to add a new message to the "greeter" string. It takes a string parameter _name and appends it to the end of the array.
+The deposit function is a function to deposit tokens to our contract.
 
-Becoming a Blockchain developer can seem a daunting task in the big picture, even for developers.
+# Client
+It is a react frontend app that uses bootstrap library for css of components. We have also used react useEffect as well as use State hooks to handle components state on thier mounting on the webpage.
 
-Why?
+# Setup
+## Use the following steps to deploy the DAPP
+### Step1: Clone the repository
+### Step2: open three terminals in vs code and in first terminal run ``cd ./client`` the run ``npm i``
+### Step1: in second terminal run `` cd ./contract`` then run ```npm i``` then ```npx hardhat node```
+### Step1: in third terminal run `` cd ./contract`` then run ```npx hardhat --network localhost run scripts/sample-script.js```
+### Step1: in first terminal again run ``npm run start``
 
-Because there are so many random tools involved. There’s the Truffle suite, Hardhat, Waffle, Web3.js, ethers.js, MetaMask, Solidity, Vyper, the Remix IDE, and so on.
 
-Which one should you start with? How do they all fit together? Do you really need to know them all?
 
-Well, I’m going to simplify this for you in this guide and walk you step by step through getting started as a Blockchain developer.
-
-And this guide is FOR DEVELOPERS. If you have no clue how to code, then completing a basic web development course first would be a prerequisite.
-
-But if you know basic JavaScript or a similar language and want to break into the Blockchain industry, then this guide will walk you through the tools you need and how they work together to create a simple decentralized application.
-
-YouTube Full Tutorial: https://youtu.be/LSL69RGeQL0
-
-You'll need to compile your smart contract and add the json artifact to your React app. 
